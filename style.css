@@ -1,7 +1,8 @@
 body {
-  background-color: #302032;
+  background-color: #361540;
   color: white;
   font-family: Calibri, Helvetica, serif;
+  font-size: 1.5em;
 }
 
 header {
@@ -13,13 +14,36 @@ header {
 }
 
 header p {
-  font-size: 1.8em;
+  font-size: 1.3em;
   font-weight: 50;
   padding: 5px;
 }
 
 header h1 {
-  font-size: 3.6em;
+  font-size: 3em;
   font-weight: 500;
   margin: 0;
+}
+
+nav {
+  background-color: white;
+  width: 90%;
+  color: #361540;
+  margin: 5%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 50;
+  padding: 5px;
+}
+
+nav ul {
+  display: inline;
+  width: 100%;
+  background-color: red;
+}
+
+nav ul li {
+  display: inline;
+  border: 1px solid #361540;
+  width: 50%;
 }
