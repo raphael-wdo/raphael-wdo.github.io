@@ -6,7 +6,7 @@ body {
 
 header {
   font-size: 1.5em;
-  background-image: linear-gradient(hsl(240, 60%, 15%, 70%), black), url("images/background.jpeg");
+  background-image: linear-gradient(hsl(240, 60%, 15%, 50%), black), url("images/background.jpeg");
   background-size: cover;
   margin: -7px;
   padding: 20% 10% 20% 10%;
