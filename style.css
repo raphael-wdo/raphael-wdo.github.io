@@ -9,7 +9,7 @@ header {
   background-image: linear-gradient(hsl(240, 60%, 15%, 40%), black), url("images/background.jpeg");
   background-size: cover;
   margin: -7px;
-  padding: 20px 10%;
+  padding: 10% 10% 0;
   vertical-align:middle;
 }
 
