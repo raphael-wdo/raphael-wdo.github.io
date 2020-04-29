@@ -61,6 +61,12 @@ section {
   font-size: 1.5em;
 }
 
+.notice {
+  color: black;
+  background-color: white;
+  padding: 50px;
+}
+
 footer {
   background-color: black;
   text-align: center;
