@@ -47,10 +47,15 @@ nav {
   padding: 25px 0;
 }
 
-nav ul li {
+ul li {
   display: inline;
   padding: 10px;
   margin: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 section {
@@ -65,6 +70,17 @@ section {
   color: black;
   background-color: white;
   padding: 50px;
+}
+
+.aboutButton {
+    margin: 40px;
+}
+
+.aboutButton a{
+  color: black;
+  text-decoration: none;
+  padding: 20px 40px;
+  background-color: white;
 }
 
 footer {
