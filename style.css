@@ -9,8 +9,8 @@ header {
   font-size: 1.5em;
   background-image: linear-gradient(hsl(240, 60%, 15%, 40%), black), url("images/background.jpeg");
   background-size: cover;
-  padding: 10% 10% 0;
-  vertical-align:middle;
+  padding: 10% 10% 200px;
+  height: 400px;
 }
 
 header div {
@@ -20,21 +20,12 @@ header div {
 
 header p {
   font-weight: 50;
-  padding: 5px;
+  padding: 50px;
 }
 
 header h1 {
   font-weight: 500;
   margin: 0;
-}
-
-header img {
-  text-align: center;
-  margin-left: 50px;
-  width: 30%;
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 nav {
@@ -69,6 +60,23 @@ section {
 .notice {
   color: black;
   background-color: white;
+  padding: 50px;
+}
+
+
+.photo {
+  display: inline;
+  width: 50%;
+  background-color: white;
+  margin: 0;
+}
+
+.about_me {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  background-color: black;
+  height: 100%;
   padding: 50px;
 }
 
