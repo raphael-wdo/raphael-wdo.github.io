@@ -17,8 +17,8 @@
       <nav>
         <!--Insert sticky navbar here-->
         <ul>
-          <li><a href="about.html">About me</a></li>|
-          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="#about">About me</a></li>|
+          <li><a href="#highlighted_projects">Projects</a></li>
         </ul>
       </nav>
       <section>
@@ -27,7 +27,7 @@
           <p>This personal website is still under construction. You may leave feedback via my email: <a href= "mailto:wongdohong2@gmail.com">wongdohong2@gmail.com</a></p>
         </div>
       </section>
-      <section class="about">
+      <section id="about">
         <div class="photo">
           <img class="header_img" src="images/me.png"/>
         </div>
@@ -36,7 +36,7 @@
           <!--<p>Hi, I'm Raphael and thanks for visiting my website. I am currently
             studying computer science at RMIT. I enjoy programming, solving
           problems, and making user interface.</p>-->
-          <p>Thanks for visiting my website</p>
+          <p>Thanks for visiting my website!</p>
           <p>I was born in Kuching, Sarawak, Malaysia. Back when I was in high school, maths is my passion. Not only I aced my maths test,
           but I also participated in several competitions and events and won awards.</p>
           <p>My love in maths has helped me to be a developer when I enrolled into Swinburne University of Technology and later transfer to RMIT University.
@@ -44,21 +44,41 @@
         </div>
       </section>
       <section>
-        <div class="highlighted_projects">
+        <div id="highlighted_projects">
           <h2>HIGHLIGHTED PROJECTS</h2>
           <ul>
             <li>
-              <div class="project_thumbnail">
-                <p>Lunardo Cinema Website</p>
+              <div class="projects">
+                <img class="project_thumbnail" src="images/lunardo.png">
+                <div class="project_info">
+                  <h3>Lunardo Cinema Website</h3>
+                  <p>This is a simple static cinema website developed for Web Programming assignment in RMIT. Lunardo Cinema is a fictional client which went under a new management and requested for a refreshed web design.</p>
+                  <p>The single page website features changing background for different part of the webpage, including about us, pricing, now showing and book tickets. It also features selection of movie on the now showing section.</p>
+                  <div class="links">
+                    <p><a href="https://github.com/rmit-s3735236-raphael-wong/wpa4" target="_blank">Check the github repository</a></p>
+                  </div>
+                  <div class="links">
+                    <p><a href="https://titan.csit.rmit.edu.au/~s3735236/wp/a4/index.php" target="_blank">Check the example website</a></p>
+                  </div>
+                </div>
               </div>
             </li>
             <li>
-              <div class="project_thumbnail">
-                <p>RMITSocial Web Application</p>
+              <div class="projects">
+                <img class="project_thumbnail" src="images/game.png">
+                <div class="project_info">
+                  <h3>Island Defense Game</h3>
+                  <p>This is an assignment project for Interactive and 3D graphics. This an island defense game where the objective is to shoot as many enemy boats as possible.</p>
+                  <p>The game involves algorithms to generate 3D waves, a simple AI for enemies to spawn and move and cannon projectile. The game also features a color changing healthbar, performance display and debug mode.</p>
+                  <div class="links">
+                    <p><a href="https://github.com/rmit-s3735236-raphael-wong/i3da2" target="_blank">Check the github repository</a></p>
+                  </div>
+                </div>
               </div>
             </li>
+
           </ul>
-          <p class="more_nav">Find more projects</p>
+          <p class="more_nav"><a href="https://github.com/rmit-s3735236-raphael-wong/">Find more projects</a></p>
         </div>
       </section>
 
