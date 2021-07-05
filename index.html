@@ -17,14 +17,18 @@
       <nav>
         <!--Insert sticky navbar here-->
         <ul>
-          <li><a href="#about">About me</a></li>|
-          <li><a href="#highlighted_projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>|
+          <li><a href="#about">History</a></li>|
+          <li><a href="#about">Skills</a></li>|
+          <li><a href="#about">Achievements</a></li>|
+          <li><a href="#highlighted_projects">Projects</a></li>|
+          <li><a href="#about">Social</a></li>
         </ul>
       </nav>
       <section>
         <div class="notice">
-          <p>NOTICE</p>
-          <p>This personal website is still under construction. You may leave feedback via my email: <a href= "mailto:wongdohong2@gmail.com">wongdohong2@gmail.com</a></p>
+          <h3>Welcome</h3>
+          <p>Welcome to my personal website. It is still under construction, so if you have any feedback, email me at: <a href= "mailto:wongdohong2@gmail.com">wongdohong2@gmail.com</a></p>
         </div>
       </section>
       <section id="about">
@@ -45,8 +49,27 @@
       </section>
       <section>
         <div id="highlighted_projects">
-          <h2>HIGHLIGHTED PROJECTS</h2>
+          <h2 class="heading2">PROJECTS</h2>
           <ul>
+            <li>
+              <div class="projects">
+                <img class="project_thumbnail" src="images/qrattend.png">
+                <div class="project_info">
+                  <h3>QRAttend Web Application</h3>
+                  <p>QRAttend is a web application which allows users to check in and out their time of attendance and ease tracking of attendance for work.</p>
+                  <p>The application can also set the working hours in order to track workers who are late to work. It also includes dynamic QR code generator to prevent workers from reusing the QR code. Users can use the QRAttend app or any other QR code scanner
+                    to use the application on their mobile phones.
+                  </p>
+                  <p>This application is developped primarily on React JS, with Firebase hosting and Firestore as its database. The phone application is developed with Flutter.</p>
+                  <div class="links">
+                    <p><a href="https://github.com/rmit-s3735236-raphael-wong/qr_attend_dbms" target="_blank">Check the github repository</a></p>
+                  </div>
+                  <div class="links">
+                    <p><a href="https://qr-attend-30910.web.app/" target="_blank">Check the website</a></p>
+                  </div>
+                </div>
+              </div>
+            </li>
             <li>
               <div class="projects">
                 <img class="project_thumbnail" src="images/lunardo.png">
@@ -68,8 +91,8 @@
                 <img class="project_thumbnail" src="images/game.png">
                 <div class="project_info">
                   <h3>Island Defense Game</h3>
-                  <p>This is an assignment project for Interactive and 3D graphics. This an island defense game where the objective is to shoot as many enemy boats as possible.</p>
-                  <p>The game involves algorithms to generate 3D waves, a simple AI for enemies to spawn and move and cannon projectile. The game also features a color changing healthbar, performance display and debug mode.</p>
+                  <p>This is an assignment project for Interactive and 3D graphics. This project is an island defense game where players have to shoot as many enemy boats as possible.</p>
+                  <p>The game involves algorithms to generate 3D waves, a simple AI for enemies to spawn and move and cannon projectile. The game also features a color changing health bar, performance display and debug mode.</p>
                   <div class="links">
                     <p><a href="https://github.com/rmit-s3735236-raphael-wong/i3da2" target="_blank">Check the github repository</a></p>
                   </div>
@@ -78,13 +101,12 @@
             </li>
 
           </ul>
-          <p class="more_nav"><a href="https://github.com/rmit-s3735236-raphael-wong/">Find more projects</a></p>
         </div>
       </section>
 
       <section>
         <div class="social_media">
-          <h2>SOCIAL LINKS</h2>
+          <h2 class="heading2">SOCIAL</h2>
           <ul>
             <li>GitHub</li>
             <li>LinkedIn</li>
