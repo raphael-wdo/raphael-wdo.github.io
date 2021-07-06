@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+main{
+  background: rgb(19,15,66);
+  background: linear-gradient(0deg, rgba(19,15,66,1) 0%, rgba(60,29,107,1) 38%, rgba(31,54,133,1) 100%);
+}
+
 header {
   font-size: 1.5em;
   background-image: linear-gradient(hsl(240, 60%, 15%, 40%), black), url("images/background.jpeg");
@@ -90,7 +95,7 @@ section {
   display: inline-block;
   width: 50%;
   text-align: left;
-  background-color: black;
+  background-color: rgba(0,0,0,0.5);
   height: 100%;
   padding: 50px;
 }
@@ -102,6 +107,7 @@ section {
 .project_thumbnail {
   width: 360px;
   height: 200px;
+  object-fit: cover;
   padding: 0 5px;
   border-bottom: 10px solid white;
   float: left;
@@ -111,18 +117,19 @@ section {
   z-index: 2;
   text-align: left;
   width: 65%;
-  background-color: black;
+  background-color: rgba(0,0,0,0.5);
   display: inline-block;
   padding: 30px;
   margin: 0;
 }
 
-.project_info h3 {
+.project_title {
   margin: -40px auto auto -40px;;
   background-color: white;
   color: black;
   padding: 10px;
-  width: 600px;
+  width: 500px;
+  transform: skew(25deg);
 }
 
 .links a{
@@ -159,5 +166,42 @@ footer {
   padding: 20px;
   width: 400px;
   margin: 5px auto;
-  box-shadow: 20px 20px;
+  box-shadow: 20px 20px rgba(0,0,0,0.5);
+  transform: skew(25deg);
 }
+
+.heading2 h2, .project_title h3{
+  transform:skew(-25deg);
+  padding: 0;
+  margin: 0;
+}
+
+.project_title h3{
+  padding-left: 10px;
+}
+
+#socials{
+  background-color: rgba(0,0,0,0.5);
+  margin: 50px auto;
+}
+
+.social_link{
+  display: inline-block;
+  margin: 40px;
+}
+
+.social_link img{
+  width: 100px;
+  height: 100px;
+  object-fit:contain;
+}
+
+.social_link a{
+  color: white;
+  text-decoration: none;
+}
+
+.social_link a:hover{
+  text-decoration: underline;
+}
+
