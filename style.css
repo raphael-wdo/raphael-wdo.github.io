@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #090a36;
   color: white;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  width: 100%;
 }
 
 main{
@@ -12,7 +17,7 @@ main{
 
 header {
   font-size: 1.5em;
-  background-image: linear-gradient(hsl(240, 60%, 15%, 40%), black), url("images/background.jpeg");
+  background-image: linear-gradient(rgba(60,29,107,0.4), black), url("images/background.jpeg");
   background-size: cover;
   padding: 250px 10%;
   height: 350px;
@@ -28,9 +33,41 @@ header p {
   padding: 50px;
 }
 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 header h1 {
   font-weight: 500;
   margin: 0;
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+header h2{
+  animation-delay: 2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 nav {
@@ -61,20 +98,51 @@ nav ul li a:hover{
 }
 
 section {
-  width: 80%;
   text-align:center;
   margin: auto;
   padding: 50px;
   font-size: 1.2em;
 }
 
-.notice {
+@keyframes slideup{
+  0%{
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 100%;
+    transform:translateY(0);
+  }
+}
+
+/*.notice{
+  width: 80%;
+  margin: auto;
   color: black;
   background-color: white;
   padding: 50px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+  animation-name: slideup;
+  animation-duration: 2s;
+}*/
+
+#notice {
+  opacity: 0%;
+  width: 80%;
+  margin: auto;
+  color: black;
+  background-color: white;
+  padding: 50px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
-.notice a{
+#notice.is-inViewport{
+  animation-name: slideup;
+  animation-duration: 1.5s;
+  opacity: 100%;
+}
+
+#notice a{
   color: black;
 }
 
@@ -96,21 +164,23 @@ section {
   width: 50%;
   text-align: left;
   background-color: rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
   height: 100%;
   padding: 50px;
 }
 
 .projects {
   padding: 40px;
+  width: 80%;
+  margin: auto;
 }
 
 .project_thumbnail {
   width: 360px;
   height: 200px;
   object-fit: cover;
-  padding: 0 5px;
-  border-bottom: 10px solid white;
   float: left;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
 .project_info {
@@ -121,9 +191,10 @@ section {
   display: inline-block;
   padding: 30px;
   margin: 0;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
-.project_title {
+.project_title, .skillGroupTitle {
   margin: -40px auto auto -40px;;
   background-color: white;
   color: black;
@@ -166,31 +237,34 @@ footer {
   padding: 20px;
   width: 400px;
   margin: 5px auto;
-  box-shadow: 20px 20px rgba(0,0,0,0.5);
+  box-shadow: 20px 20px 1px rgba(0,0,0,0.5);
   transform: skew(25deg);
 }
 
-.heading2 h2, .project_title h3{
+.heading2 h2, .project_title h3, .skillGroupTitle h3{
   transform:skew(-25deg);
   padding: 0;
   margin: 0;
 }
 
-.project_title h3{
+.project_title h3, .skillGroupTitle h3{
+  text-align: left;
   padding-left: 10px;
 }
 
-#socials{
+#socials, .skillGroup{
+  width: 80%;
   background-color: rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
   margin: 50px auto;
 }
 
-.social_link{
+.social_link, .skill{
   display: inline-block;
   margin: 40px;
 }
 
-.social_link img{
+.social_link img, .skill_img{
   width: 100px;
   height: 100px;
   object-fit:contain;
@@ -204,4 +278,49 @@ footer {
 .social_link a:hover{
   text-decoration: underline;
 }
+
+.skillGroup{
+  display: block;
+  margin: 80px auto;
+}
+
+#skillsContainer{
+  margin: 160px auto 80px auto;
+  
+}
+
+
+.fa-star{
+  color: black;
+}
+
+.checked {
+  color: white;
+}
+
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 40px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  height: 50px;
+  width: 50px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+}
+
+#backToTopBtn:hover {
+  background-color: #4f4fe0; /* Add a dark-grey background on hover */
+  color: white;
+}
+
+
+
 
