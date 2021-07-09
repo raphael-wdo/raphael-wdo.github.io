@@ -18,7 +18,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// If the user is in view of an element, we will add another class
+// If the user is in view of an element, we will add another class, so that we can apply CSS animation
 function callbackFunc(entries, observer)
 {
   entries.forEach(entry => {
@@ -35,3 +35,24 @@ let options = {
 let observer = new IntersectionObserver(callbackFunc, options);
 
 observer.observe(document.getElementById('notice'));
+observer.observe(document.getElementById('abt1'));
+observer.observe(document.getElementById('abt2'));
+observer.observe(document.getElementById('abt3'));
+observer.observe(document.getElementById('abt4'));
+
+for (let i = 1; i < 5; i++) {
+  let about = "abt" + i;
+  let social = "scl" + i;
+  observer.observe(document.getElementById(about));
+  observer.observe(document.getElementById(social));
+}
+
+for (let i = 1; i < 15; i++) {
+  let skill = "skl" + i;
+  observer.observe(document.getElementById(skill));
+}
+
+for (let i = 1; i < 18; i++) {
+  let project = "prj" + i;
+  observer.observe(document.getElementById(project));
+}

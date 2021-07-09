@@ -115,17 +115,6 @@ section {
   }
 }
 
-/*.notice{
-  width: 80%;
-  margin: auto;
-  color: black;
-  background-color: white;
-  padding: 50px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
-  animation-name: slideup;
-  animation-duration: 2s;
-}*/
-
 #notice {
   opacity: 0%;
   width: 80%;
@@ -136,9 +125,10 @@ section {
   box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
-#notice.is-inViewport{
+/* Once the JS detects that notice is in window area, it will add the .is-inViewport class. Add Animation here. */
+#notice.is-inViewport, .abt.is-inViewport, .skill.is-inViewport, .prj.is-inViewport, .social_link.is-inViewport{
   animation-name: slideup;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   opacity: 100%;
 }
 
@@ -167,6 +157,10 @@ section {
   box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
   height: 100%;
   padding: 50px;
+}
+
+.abt, .prj{
+  opacity: 0%
 }
 
 .projects {
@@ -260,6 +254,7 @@ footer {
 }
 
 .social_link, .skill{
+  opacity: 0%;
   display: inline-block;
   margin: 40px;
 }
@@ -289,7 +284,6 @@ footer {
   
 }
 
-
 .fa-star{
   color: black;
 }
@@ -308,17 +302,23 @@ footer {
   outline: none; /* Remove outline */
   background-color: white; /* Set a background color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  padding: 10px; /* Some padding */
   height: 50px;
   width: 50px;
+  border-radius: 50%; /* Rounded corners */
   box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 
 #backToTopBtn:hover {
   background-color: #4f4fe0; /* Add a dark-grey background on hover */
   color: white;
+}
+
+#backToTopArrow{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin: auto;
 }
 
 

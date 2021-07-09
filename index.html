@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <meta charset="UTF-8">
+
+    
   </head>
   <body>
     <main>
@@ -38,11 +41,13 @@
           <img class="header_img" src="images/me.png"/>
         </div>
         <div class="about_me">
-          <h2>ABOUT ME</h2>
-          <p>Thanks for visiting my website!</p>
-          <p>I was born in Kuching, Sarawak, Malaysia. Back when I was in high school, maths is my passion. Not only I aced my maths test,
+          <!-- I wanted to add animation to the text only, without the background. -->
+          <!-- The JS Intersection Observer hates classes for some reason, so i added id for those. -->
+          <h2 class="abt" id="abt1">ABOUT ME</h2>
+          <p class="abt" id="abt2">Thanks for visiting my website!</p>
+          <p class="abt" id="abt3">I was born in Kuching, Sarawak, Malaysia. Back when I was in high school, maths is my passion. Not only I aced my maths test,
           but I also participated in several competitions and events and won awards.</p>
-          <p>My love in maths has helped me to be a developer when I enrolled into Swinburne University of Technology and later transfer to RMIT University.
+          <p class="abt" id="abt4">My love in maths has helped me to be a developer when I enrolled into Swinburne University of Technology and later transfer to RMIT University.
             I have made amazing websites and applications during my studies.</p>
         </div>
       </section>
@@ -59,7 +64,7 @@
               <h3>Programming</h3>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl1">
               <img class="skill_img" src="images/python.png"/>
               <p>Python</p>
               <div class="stars">
@@ -71,7 +76,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl2">
               <img class="skill_img" src="images/java.png"/>
               <p>Java</p>
               <div class="stars">
@@ -83,7 +88,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl3">
               <img class="skill_img" src="images/c.png"/>
               <p>C</p>
               <div class="stars">
@@ -95,7 +100,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl4">
               <img class="skill_img" src="images/c++.png"/>
               <p>C++</p>
               <div class="stars">
@@ -113,7 +118,7 @@
               <h3>Web Development</h3>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl5">
               <img class="skill_img" src="images/html.png"/>
               <p>HTML</p>
               <div class="stars">
@@ -125,7 +130,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl6">
               <img class="skill_img" src="images/css.png"/>
               <p>CSS</p>
               <div class="stars">
@@ -137,7 +142,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl7">
               <img class="skill_img" src="images/js.png"/>
               <p>Javascript</p>
               <div class="stars">
@@ -149,7 +154,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl8">
               <img class="skill_img" src="images/react.png"/>
               <p>React JS</p>
               <div class="stars">
@@ -161,7 +166,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl9">
               <img class="skill_img" src="images/php.png"/>
               <p>PHP</p>
               <div class="stars">
@@ -179,7 +184,7 @@
               <h3>Cloud Computing</h3>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl10">
               <img class="skill_img" src="images/googleCloud.png"/>
               <p>Google Cloud</p>
               <div class="stars">
@@ -191,7 +196,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl11">
               <img class="skill_img" src="images/firebase.png"/>
               <p>Firebase</p>
               <div class="stars">
@@ -203,7 +208,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl12">
               <img class="skill_img" src="images/aws.png"/>
               <p>AWS</p>
               <div class="stars">
@@ -221,7 +226,7 @@
               <h3>Others</h3>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl13">
               <img class="skill_img" src="images/flutter.png"/>
               <p>Flutter</p>
               <div class="stars">
@@ -233,7 +238,7 @@
               </div>
             </div>
 
-            <div class="skill">
+            <div class="skill" id="skl14">
               <img class="skill_img" src="images/sql.png"/>
               <p>SQL</p>
               <div class="stars">
@@ -261,15 +266,15 @@
                 <div class="project_info">
                   <div class="project_title"><h3>QRAttend Web Application</h3></div>
                   
-                  <p>QRAttend is a web application which allows users to check in and out their time of attendance and ease tracking of attendance for work.</p>
-                  <p>The application can also set the working hours in order to track workers who are late to work. It also includes dynamic QR code generator to prevent workers from reusing the QR code. Users can use the QRAttend app or any other QR code scanner
+                  <p class="prj" id="prj1">QRAttend is a web application which allows users to check in and out their time of attendance and ease tracking of attendance for work.</p>
+                  <p class="prj" id="prj2">The application can also set the working hours in order to track workers who are late to work. It also includes dynamic QR code generator to prevent workers from reusing the QR code. Users can use the QRAttend app or any other QR code scanner
                     to use the application on their mobile phones.
                   </p>
-                  <p>This application is developped primarily on React JS, with Firebase hosting and Firestore as its database. The phone application is developed with Flutter.</p>
-                  <div class="links">
+                  <p class="prj" id="prj3">This application is developped primarily on React JS, with Firebase hosting and Firestore as its database. The phone application is developed with Flutter.</p>
+                  <div class="links prj" id="prj4">
                     <p><a href="https://github.com/rmit-s3735236-raphael-wong/qr_attend_dbms" target="_blank">Check the github repository</a></p>
                   </div>
-                  <div class="links">
+                  <div class="links prj" id="prj5">
                     <p><a href="https://qr-attend-30910.web.app/" target="_blank">Check the website</a></p>
                   </div>
                 </div>
@@ -281,14 +286,14 @@
                 <div class="project_info">
                   <div class="project_title"><h3>Check Your Baggage Application</h3></div>
                   
-                  <p>Check Your Baggage Application was my final year capstone project in my university.</p>
-                  <p>A project consisting a team of 4 developers, I was elected as the project leader. My role in this project was to direct and supervise the development of the mobile application.
+                  <p class="prj" id="prj6">Check Your Baggage Application was my final year capstone project in my university.</p>
+                  <p class="prj" id="prj7">A project consisting a team of 4 developers, I was elected as the project leader. My role in this project was to direct and supervise the development of the mobile application.
                      I was also responsible for being the scrum master, monitor the productivity of the team, designing, documenting, developing and testing the application. We also collaborated with the school of Aviation to 
                      develop the application and ensure the application meets the user needs.
                   </p>
-                  <p>The main goal of the application is to allow users to scan an item to determine if the item is safe to bring to flight. Users can also check whether the item is safe based on different airlines in Australia.</p>
-                  <p>This application is developped primarily on Flutter, with Firestore as the database.</p>
-                  <p>If you would like to check the application out, contact me through email, wongdohong2@gmail.com .</p>
+                  <p class="prj" id="prj8">The main goal of the application is to allow users to scan an item to determine if the item is safe to bring to flight. Users can also check whether the item is safe based on different airlines in Australia.</p>
+                  <p class="prj" id="prj9">This application is developped primarily on Flutter, with Firestore as the database.</p>
+                  <p class="prj" id="prj10">If you would like to check the application out, contact me through email, wongdohong2@gmail.com .</p>
                 </div>
               </div>
             </li>
@@ -298,12 +303,12 @@
                 <div class="project_info">
                   <div class="project_title"><h3>Lunardo Cinema Website</h3></div>
                   
-                  <p>This is a simple static cinema website developed for Web Programming assignment in RMIT. Lunardo Cinema is a fictional client which went under a new management and requested for a refreshed web design.</p>
-                  <p>The single page website features changing background for different part of the webpage, including about us, pricing, now showing and book tickets. It also features selection of movie on the now showing section.</p>
-                  <div class="links">
+                  <p class="prj" id="prj11">This is a simple static cinema website developed for Web Programming assignment in RMIT. Lunardo Cinema is a fictional client which went under a new management and requested for a refreshed web design.</p>
+                  <p class="prj" id="prj12">The single page website features changing background for different part of the webpage, including about us, pricing, now showing and book tickets. It also features selection of movie on the now showing section.</p>
+                  <div class="links prj" id="prj13">
                     <p><a href="https://github.com/rmit-s3735236-raphael-wong/wpa4" target="_blank">Check the github repository</a></p>
                   </div>
-                  <div class="links">
+                  <div class="links prj" id="prj14">
                     <p><a href="https://titan.csit.rmit.edu.au/~s3735236/wp/a4/index.php" target="_blank">Check the example website</a></p>
                   </div>
                 </div>
@@ -315,9 +320,9 @@
                 <div class="project_info">
                   <div class="project_title"><h3>Island Defense Game</h3></div>
                   
-                  <p>This is an assignment project for Interactive and 3D graphics. This project is an island defense game where players have to shoot as many enemy boats as possible.</p>
-                  <p>The game involves algorithms to generate 3D waves, a simple AI for enemies to spawn and move and cannon projectile. The game also features a color changing health bar, performance display and debug mode.</p>
-                  <div class="links">
+                  <p class="prj" id="prj15">This is an assignment project for Interactive and 3D graphics. This project is an island defense game where players have to shoot as many enemy boats as possible.</p>
+                  <p class="prj" id="prj16">The game involves algorithms to generate 3D waves, a simple AI for enemies to spawn and move and cannon projectile. The game also features a color changing health bar, performance display and debug mode.</p>
+                  <div class="links prj" id="prj17">
                     <p><a href="https://github.com/rmit-s3735236-raphael-wong/i3da2" target="_blank">Check the github repository</a></p>
                   </div>
                 </div>
@@ -334,25 +339,25 @@
             <h2>SOCIAL</h2>
           </div>
           <div id="socials">
-            <div class="social_link">
+            <div class="social_link" id="scl1">
               <a href="https://github.com/rmit-s3735236-raphael-wong" target="_blank">
                 <img class="social_thumbnail" src="images/github.png">
                 <p>Github</p>
               </a>
             </div>
-            <div class="social_link">
+            <div class="social_link" id="scl2">
               <a href="https://www.linkedin.com/in/raphael-wong-63b943173/" target="_blank">
                 <img class="social_thumbnail" src="images/linkedin.png">
                 <p>LinkedIn</p>
               </a>
             </div>
-            <div class="social_link">
+            <div class="social_link" id="scl3">
               <a href="https://web.facebook.com/raphael.dohong/" target="_blank">
                 <img class="social_thumbnail" src="images/facebook.png">
                 <p>Facebook</p>
               </a>
             </div>
-            <div class="social_link">
+            <div class="social_link" id="scl4">
               <a href="https://www.instagram.com/raphael_do_wong/" target="_blank">
                 <img class="social_thumbnail" src="images/instagram.png">
                 <p>Instagram</p>
@@ -362,7 +367,7 @@
         </div>
       </section>
 
-      <button onclick="topFunction()" id="backToTopBtn" title="Back To Top">&#9650</button>
+      <button onclick="topFunction()" id="backToTopBtn" title="Back To Top"><img id="backToTopArrow" src="images/up.png"/></button>
     </main>
     <footer>
       <p>Email: wongdohong2@gmail.com</p>
