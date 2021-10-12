@@ -48,7 +48,7 @@ header p {
 header h1 {
   font-weight: 500;
   margin: 0;
-  width: 24ch;
+  width: 25ch;
   animation: typing 2s steps(25), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
