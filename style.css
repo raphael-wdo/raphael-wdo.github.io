@@ -33,6 +33,7 @@ header p {
   padding: 50px;
 }
 
+/*
 @keyframes typing {
   from {
     width: 0
@@ -43,13 +44,27 @@ header p {
   50% {
     border-color: transparent
   }
+}*/
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 22ch;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgb(255, 255, 255);}
+  to{border-right-color: transparent;}
 }
 
 header h1 {
   font-weight: 500;
   margin: 0;
-  width: 25ch;
-  animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+  width: 24ch;
+  /*animation: typing 2s steps(25), blink .5s step-end infinite alternate;*/
+  animation: animated-text 4s steps(22) 1s 1 normal both,
+             animated-cursor 1s steps(22) infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
